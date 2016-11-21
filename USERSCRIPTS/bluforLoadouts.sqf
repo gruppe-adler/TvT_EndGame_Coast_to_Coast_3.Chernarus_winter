@@ -1,4 +1,4 @@
-﻿/*  BLUFOR EQUIPMENT ===========================================================
+/*  BLUFOR EQUIPMENT ===========================================================
 *
 *   How to format loadout names in this file:
 *     Add an underscore

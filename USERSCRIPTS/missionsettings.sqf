@@ -1,14 +1,14 @@
-﻿author = "Fridelcastro für Gruppe Adler";     //mission author
-onLoadName = "From Coast To Coast";      //mission name
+﻿author = "Fridelcastro & McDiod für Gruppe Adler";     //mission author
+onLoadName = "From Coast To Coast 3";      //mission name
 onLoadMission = "";                   //description in loadscreen
 loadScreen = "data\loadpic.paa";      //picture in loadscreen
 
 USECUSTOMLOADOUTS = true;             //use custom loadouts defined in bluforLoadouts.sqf and opforLoadouts.sqf?  (true/false)
 #define CIVTRAFFIC 1                  //civilian traffic parameter default value - 0: traffic off - 1: traffic on
 
-RESPAWNTIME = 120;                    //delay before player gets added to the wave
-WAVERESPAWNTIME = 240;                //delay before a complete wave respawns
-RESPAWNWAVEEXTRATIME = 30;            //time after a wave has respawned, that an additional player may respawn alone in
+RESPAWNTIME = 150;                    //delay before player gets added to the wave
+WAVERESPAWNTIME = 270;                //delay before a complete wave respawns
+RESPAWNWAVEEXTRATIME = 60;            //time after a wave has respawned, that an additional player may respawn alone in
 MAXRESPAWNTIME = 1200;                //maximum time a player has to wait under any circumstances (will respawn alone if needed)
 VEHICLERESPAWNTIME = 400;             //time after which vehicles respawn
 VEHICLERESPAWNRADIUS = 500;           //distance between startposition and current position for a vehicle to start the respawn timer
@@ -18,6 +18,7 @@ DLICONRANGE = 15;                     //range in meters at which 3D icon on inte
 EXACTINTELPOSITIONS = true;          //phase 2 task markers are exactly on intel positions - if false, trigger area is marked instead
 DEFMARKERONUL = true;                //phase 3 - defending team will only be able to see the upload point once the attacking team has started uploading
 SCHEMATICSREVEALTIME = -1;            //if phase 2 winner fails to pick up schematics for this long after phase 3 start, they are revealed to the other team - set to -1 to disable entirely
+MAXTIMETOENDGAME = 7200;              //maximum time in seconds, after which phase 3 will start regardless of how much intel was found - set to -1 to disable
 
 FRIENDLYUPLOADAI = false;             //spawn AI at upload position that is allied to uploading side - if this is false you can ignore the following settings
 FRIENDLYAIRADIUS = 100;               //radius around upload position that friendly AI spawn in
@@ -25,12 +26,12 @@ FRIENDLYAIAMOUNT = [10,15];           //amount of friendly AI - can be a whole n
 BLUFORAIFACTION = "us_ocp";           //faction of AI that will spawn at blufor upload - check below for available factions (allied AI factions)
 OPFORAIFACTION = "rus_emr";           //faction of AI that will spawn at opfor upload - check below for available factions (allied AI factions)
 
-AUTOMATICRADIOS = false;               //automatically give players the correct radios - set this to true if you want to use vanilla loadouts
+AUTOMATICRADIOS = false;              //automatically give players the correct radios - set this to true if you want to use vanilla loadouts
 SAMEENCRYPTION = true;                //enables radios of all sides to receive each other - use this if you want to give players a BLUFOR longrange and an INDEPENDENT shortrange (for example) - BLUFOR and OPFOR hear each other if both are on the same frequency
-BLUFORSWRADIO = "tf_anprc152";         //blufor sw radio - alternatives: tf_rf7800str, tf_anprc154, tf_pnr1000a, tf_anprc148jem
-OPFORSWRADIO = "tf_anprc152";          //opfor sw radio - alternatives: tf_rf7800str, tf_anprc154, tf_pnr1000a, tf_anprc148jem
-BLUFORLRRADIO = "tf_rt1523g_big_rhs";  //blufor lr radio
-OPFORLRRADIO = "tf_rt1523g_big_bwmod"; //opfor lr radio
+BLUFORSWRADIO = "tf_anprc152";        //blufor sw radio classname - check below for available classnames (radio classnames)
+OPFORSWRADIO = "tf_fadak";            //opfor sw radio classname - check below for available classnames (radio classnames)
+BLUFORLRRADIO = "tf_rt1523g_big_rhs"; //blufor longrange radio classname - check below for available classnames (radio classnames)
+OPFORLRRADIO = "tf_mr3000_rhs";       //opfor longrange radio classname - check below for available classnames (radio classnames)
 
 
 
